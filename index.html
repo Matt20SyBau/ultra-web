@@ -10,6 +10,7 @@
         body { font-family: 'Inter', sans-serif; background-color: #1A1A1B; }
         .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
         .neon-text { color: #00D1FF; text-shadow: 0 0 10px rgba(0, 209, 255, 0.5); }
+        .btn-glow:hover { box-shadow: 0 0 20px rgba(0, 209, 255, 0.4); }
     </style>
 </head>
 <body class="text-gray-300">
@@ -17,136 +18,120 @@
     <header class="min-h-screen flex flex-col items-center justify-center text-center px-4">
         <div class="mb-6">
             <h1 class="text-5xl md:text-7xl font-light tracking-[0.3em] text-white">U L T R A</h1>
-            <p class="text-sm tracking-[0.2em] mt-2 text-gray-500 uppercase">Detallado & Bioseguridad Automotriz</p>
+            <p class="text-sm tracking-[0.2em] mt-2 text-gray-500 uppercase">Ingeniería Automotriz</p>
         </div>
-        <h2 class="text-xl md:text-2xl max-w-2xl mb-8 font-light italic">"No limpiamos vehículos, restauramos su integridad molecular y estética."</h2>
-        <a href="https://wa.me/16513562815" class="px-8 py-3 border border-cyan-500 text-cyan-500 hover:bg-cyan-500 hover:text-black transition-all duration-300 tracking-widest uppercase text-xs">Reservar Sesión Exclusiva</a>
+        <h2 class="text-xl md:text-2xl max-w-2xl mb-8 font-light italic text-gray-400">"Restauramos la integridad molecular y estética de su vehículo."</h2>
+        <a href="#servicios" class="px-8 py-3 border border-cyan-500 text-cyan-500 hover:bg-cyan-500 hover:text-black transition-all duration-300 tracking-widest uppercase text-xs btn-glow">Ver Protocolos</a>
     </header>
 
-<section class="py-20 px-6">
+    <section class="py-20 px-6 bg-[#141415]">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h3 class="neon-text text-xs uppercase tracking-[0.4em] mb-4">Ciencia Aplicada</h3>
+                <h4 class="text-3xl text-white font-light">Nuestro Protocolo de Bioseguridad</h4>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass p-8 rounded-lg text-center">
+                    <span class="text-cyan-500 text-4xl mb-4 block font-bold">320°F</span>
+                    <h5 class="text-white font-bold mb-2">Termodesinfección</h5>
+                    <p class="text-sm text-gray-500">Vapor seco saturado que elimina el 99.9% de patógenos en fibras sin mojar el interior.</p>
+                </div>
+                <div class="glass p-8 rounded-lg text-center border-cyan-500/20">
+                    <span class="text-cyan-500 text-4xl mb-4 block font-bold">O3</span>
+                    <h5 class="text-white font-bold mb-2">Neutralización</h5>
+                    <p class="text-sm text-gray-500">Generación de ozono para purificar el aire y eliminar olores orgánicos de raíz.</p>
+                </div>
+                <div class="glass p-8 rounded-lg text-center">
+                    <span class="text-cyan-500 text-4xl mb-4 block font-bold">UV</span>
+                    <h5 class="text-white font-bold mb-2">Protección Molecular</h5>
+                    <p class="text-sm text-gray-500">Escudo contra rayos UV que previene el envejecimiento de plásticos y cueros.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-24 px-6">
         <div class="max-w-6xl mx-auto text-center">
-            <h3 class="neon-text text-xs uppercase tracking-[0.4em] mb-4">Inversión en Mantenimiento</h3>
-            <h4 class="text-4xl text-white font-light mb-16">Seleccione su Nivel de Restauración</h4>
+            <h4 class="text-4xl text-white font-light mb-16">Niveles de Restauración</h4>
             
             <div class="grid md:grid-cols-3 gap-8 items-stretch">
-                <div class="glass p-8 rounded-xl border-white/5 flex flex-col justify-between opacity-70">
+                <div class="glass p-8 rounded-xl opacity-60 flex flex-col justify-between">
                     <div>
-                        <h5 class="uppercase text-[10px] tracking-widest mb-4 text-gray-400">Focus Interior</h5>
-                        <div class="text-4xl text-white font-light mb-6">$80</div>
-                        <p class="text-xs text-gray-500 mb-6 italic">"Mantenimiento básico de superficies visibles."</p>
-                        <ul class="text-left text-xs space-y-4 text-gray-500 border-t border-white/5 pt-6">
-                            <li>• Aspirado de alfombras</li>
-                            <li>• Limpieza de tableros (superficial)</li>
-                            <li>• Acondicionado mate UV</li>
-                            <li class="text-red-900/50 uppercase font-bold text-[9px]">— NO Incluye extracción de manchas</li>
-                            <li class="text-red-900/50 uppercase font-bold text-[9px]">— NO Incluye vapor térmico</li>
+                        <h5 class="uppercase text-[10px] tracking-widest mb-4 text-gray-400 font-bold">Focus</h5>
+                        <div class="text-3xl text-white font-light mb-6">$80</div>
+                        <ul class="text-left text-xs space-y-4 text-gray-500">
+                            <li>• Aspirado Ciclónico</li>
+                            <li>• Limpieza de Superficies</li>
+                            <li>• Acondicionado Mate</li>
                         </ul>
                     </div>
-                    <a href="https://wa.me/16513562815" class="mt-8 py-2 border border-white/10 text-[10px] uppercase tracking-widest hover:bg-white hover:text-black transition">Seleccionar</a>
+                    <a href="https://wa.me/16513562815" class="mt-8 py-2 border border-white/10 text-[10px] uppercase tracking-widest hover:bg-white hover:text-black transition">Básico</a>
                 </div>
 
-                <div class="relative glass p-10 rounded-xl border-2 border-cyan-500 transform scale-105 shadow-[0_0_50px_rgba(0,209,255,0.15)] flex flex-col justify-between">
-                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-cyan-500 text-black text-[10px] font-extrabold px-6 py-1 rounded-full uppercase tracking-tighter">
-                        Recomendación Profesional
-                    </div>
+                <div class="relative glass p-10 rounded-xl border-2 border-cyan-500 transform scale-105 shadow-[0_0_40px_rgba(0,209,255,0.1)] flex flex-col justify-between">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-cyan-500 text-black text-[10px] font-extrabold px-6 py-1 rounded-full uppercase">Recomendado</div>
                     <div>
                         <h5 class="uppercase text-xs tracking-widest mb-4 text-cyan-400 font-bold">Master Clean</h5>
                         <div class="text-6xl text-white font-bold mb-2">$160</div>
-                        <p class="text-sm text-cyan-500/80 mb-6 font-medium italic">"Restauración profunda y sanitización certificada."</p>
-                        <ul class="text-left text-sm space-y-4 text-gray-200 border-t border-cyan-500/20 pt-6">
-                            <li class="flex items-center"><span class="text-cyan-500 mr-2">✓</span> Lavado por Inyección/Extracción</li>
-                            <li class="flex items-center"><span class="text-cyan-500 mr-2">✓</span> Desinfección Térmica (320°F)</li>
-                            <li class="flex items-center"><span class="text-cyan-500 mr-2">✓</span> Detallado de Consola y Grietas</li>
-                            <li class="flex items-center font-bold text-white"><span class="text-cyan-500 mr-2">✓</span> Reporte Digital de Bioseguridad</li>
-                            <li class="flex items-center text-xs text-cyan-400 italic">Ideal para: familias, alergias y autos usados.</li>
+                        <p class="text-xs text-cyan-500/60 mb-8 italic">El estándar de oro para el cuidado interior.</p>
+                        <ul class="text-left text-sm space-y-4 text-gray-200">
+                            <li>✅ Inyección / Extracción Profunda</li>
+                            <li>✅ Desinfección Térmica (320°F)</li>
+                            <li>✅ Detallado de Ductos y Grietas</li>
+                            <li class="font-bold text-white">✅ Reporte Digital de Bioseguridad</li>
                         </ul>
                     </div>
-                    <a href="https://wa.me/16513562815" class="mt-8 py-4 bg-cyan-500 text-black font-bold uppercase text-xs tracking-widest hover:bg-cyan-400 transition shadow-lg shadow-cyan-500/20">Agendar Master Clean</a>
+                    <a href="https://wa.me/16513562815" class="mt-10 py-4 bg-cyan-500 text-black font-bold uppercase text-xs tracking-widest hover:bg-cyan-400 transition">Agendar Servicio</a>
                 </div>
 
-                <div class="glass p-8 rounded-xl border-white/5 flex flex-col justify-between">
+                <div class="glass p-8 rounded-xl flex flex-col justify-between">
                     <div>
-                        <h5 class="uppercase text-[10px] tracking-widest mb-4 text-gray-400">Ultra Armor</h5>
-                        <div class="text-4xl text-white font-light mb-6">$240</div>
-                        <p class="text-xs text-gray-500 mb-6 italic">"Protección total a largo plazo."</p>
-                        <ul class="text-left text-xs space-y-4 text-gray-400 border-t border-white/5 pt-6">
-                            <li>• <b>Todo lo del Plan Master Clean</b></li>
-                            <li>• Nutrición de Cuero Pro (pH Neutro)</li>
-                            <li>• Sellado Cerámico (6 meses de durabilidad)</li>
-                            <li>• Desodorización por Ozono (O3)</li>
-                            <li>• Restauración de Claridad de Faros</li>
+                        <h5 class="uppercase text-[10px] tracking-widest mb-4 text-gray-400 font-bold">Ultra Armor</h5>
+                        <div class="text-3xl text-white font-light mb-6">$240</div>
+                        <ul class="text-left text-xs space-y-4 text-gray-500">
+                            <li>• Todo lo del Plan Master</li>
+                            <li>• Nutrición de Cuero Pro</li>
+                            <li>• Sellado Cerámico (6 Meses)</li>
+                            <li>• Restauración de Faros</li>
                         </ul>
                     </div>
-                    <a href="https://wa.me/16513562815" class="mt-8 py-2 border border-white/20 text-[10px] uppercase tracking-widest hover:bg-white/10 transition">Ver Detalles Premium</a>
-                </div>
-            </div>
-        </div>
-    </section>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="glass p-8 rounded-lg">
-                    <span class="text-cyan-500 text-3xl mb-4 block">320°F</span>
-                    <h5 class="text-white font-bold mb-2">Termodesinfección</h5>
-                    <p class="text-sm text-gray-400">Vapor seco saturado para eliminación del 99.9% de patógenos en fibras y ductos.</p>
-                </div>
-                <div class="glass p-8 rounded-lg border-cyan-500/30">
-                    <span class="text-cyan-500 text-3xl mb-4 block">O3</span>
-                    <h5 class="text-white font-bold mb-2">Neutralización</h5>
-                    <p class="text-sm text-gray-400">Generación de Ozono de alta frecuencia para purificación total del habitáculo.</p>
-                </div>
-                <div class="glass p-8 rounded-lg">
-                    <span class="text-cyan-500 text-3xl mb-4 block">UV</span>
-                    <h5 class="text-white font-bold mb-2">Sellado Molecular</h5>
-                    <p class="text-sm text-gray-400">Protectores con polímeros UV que inhiben el crecimiento bacteriano.</p>
+                    <a href="https://wa.me/16513562815" class="mt-8 py-2 border border-white/20 text-[10px] uppercase tracking-widest hover:bg-white/10 transition">Premium</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-20 px-6">
-        <div class="max-w-6xl mx-auto text-center">
-            <h3 class="text-white text-3xl font-light mb-16 uppercase tracking-widest">Planes de Inversión</h3>
+    <section class="py-24 px-6 bg-[#1A1A1B] border-t border-white/5">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h4 class="text-2xl text-white font-light tracking-widest">PLANES DE MANTENIMIENTO</h4>
+                <p class="text-gray-500 text-sm mt-4">Para quienes mantienen el estándar ULTRA todo el año.</p>
+            </div>
             
-            <div class="grid md:grid-cols-3 gap-6 items-center">
-                <div class="glass p-10 rounded-xl opacity-60 hover:opacity-100 transition-opacity">
-                    <h5 class="uppercase text-xs tracking-widest mb-4">Focus Interior</h5>
-                    <div class="text-4xl text-white font-light mb-6">$80</div>
-                    <ul class="text-left text-xs space-y-3 text-gray-500">
-                        <li>• Aspirado Ciclónico</li>
-                        <li>• Limpieza de Superficies</li>
-                        <li>• Acondicionado Mate</li>
-                    </ul>
+            <div class="grid md:grid-cols-3 gap-6 text-center">
+                <div class="p-6 border border-white/5 rounded-xl hover:border-white/20 transition">
+                    <h5 class="text-xs uppercase tracking-widest text-gray-400">Silver</h5>
+                    <div class="text-2xl text-white my-4">$95<span class="text-xs text-gray-600">/mes</span></div>
+                    <p class="text-[10px] text-gray-600 uppercase">1 Visita Mensual</p>
                 </div>
-
-                <div class="glass p-12 rounded-xl border-cyan-500 transform scale-110 shadow-2xl shadow-cyan-500/10">
-                    <span class="bg-cyan-500 text-black text-[10px] font-bold px-3 py-1 rounded-full uppercase">Más Solicitado</span>
-                    <h5 class="uppercase text-xs tracking-widest mt-6 mb-4 text-white">Master Clean</h5>
-                    <div class="text-5xl text-white font-bold mb-6">$160</div>
-                    <ul class="text-left text-sm space-y-4 text-gray-300">
-                        <li class="flex items-center">✅ Todo lo del Plan Focus</li>
-                        <li class="flex items-center">✅ Detallado de Ventilación</li>
-                        <li class="flex items-center">✅ Inyección/Extracción</li>
-                        <li class="flex items-center font-bold text-cyan-400 italic">✅ Reporte Digital de Bioseguridad</li>
-                    </ul>
+                <div class="p-6 border border-cyan-500/30 rounded-xl bg-cyan-500/5 transition">
+                    <h5 class="text-xs uppercase tracking-widest text-cyan-400">Gold</h5>
+                    <div class="text-2xl text-white my-4">$165<span class="text-xs text-gray-600">/mes</span></div>
+                    <p class="text-[10px] text-cyan-700 uppercase font-bold">2 Visitas Mensuales</p>
                 </div>
-
-                <div class="glass p-10 rounded-xl">
-                    <h5 class="uppercase text-xs tracking-widest mb-4 text-gray-400">Ultra Armor</h5>
-                    <div class="text-4xl text-white font-light mb-6">$240</div>
-                    <ul class="text-left text-xs space-y-3 text-gray-400">
-                        <li>• Todo lo del Plan Master</li>
-                        <li>• Nutrición de Cuero Pro</li>
-                        <li>• Sellado Cerámico (6 Meses)</li>
-                        <li>• Ozonización Premium</li>
-                    </ul>
+                <div class="p-6 border border-white/5 rounded-xl hover:border-white/20 transition">
+                    <h5 class="text-xs uppercase tracking-widest text-gray-400">Platinum</h5>
+                    <div class="text-2xl text-white my-4">$310<span class="text-xs text-gray-600">/mes</span></div>
+                    <p class="text-[10px] text-gray-600 uppercase">4 Visitas Mensuales</p>
                 </div>
             </div>
         </div>
     </section>
 
     <footer class="py-10 text-center border-t border-white/5">
-        <p class="text-[10px] uppercase tracking-widest text-gray-600">Shakopee, Minnesota | Bioseguridad Móvil</p>
+        <p class="text-[10px] uppercase tracking-widest text-gray-600">Shakopee, Minnesota | Servicio de Ingeniería Móvil</p>
     </footer>
 
 </body>
 </html>
+
