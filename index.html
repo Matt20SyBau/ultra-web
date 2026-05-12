@@ -17,13 +17,14 @@
         .plan-card:hover .card-content { transform: translateY(-10px); }
         .card-content { position: relative; z-index: 10; transition: transform 0.4s ease; }
 
-        /* Estilos del Slider Antes/Después */
-        .comparison-slider { position: relative; width: 100%; height: 400px; overflow: hidden; border-radius: 1rem; }
+        /* Estilos del Slider Antes/Después (TAMAÑO AUMENTADO) */
+        .comparison-slider { position: relative; width: 100%; height: 650px; overflow: hidden; border-radius: 1.5rem; }
+        @media (max-width: 768px) { .comparison-slider { height: 400px; } }
         .comparison-slider img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
         .image-before { z-index: 1; }
         .image-after { z-index: 2; clip-path: inset(0 50% 0 0); }
         .slider-input { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 3; appearance: none; background: transparent; cursor: ew-resize; }
-        .slider-line { position: absolute; top: 0; bottom: 0; left: 50%; width: 2px; background: #00D1FF; z-index: 2; transform: translateX(-50%); pointer-events: none; }
+        .slider-line { position: absolute; top: 0; bottom: 0; left: 50%; width: 3px; background: #00D1FF; z-index: 2; transform: translateX(-50%); pointer-events: none; }
     </style>
 </head>
 <body class="text-gray-300">
@@ -33,36 +34,36 @@
             <h1 class="text-5xl md:text-7xl font-light tracking-[0.3em] text-white">U L T R A</h1>
             <p class="text-xs tracking-[0.5em] mt-4 text-cyan-500 uppercase font-bold">Ingeniería Automotriz Móvil</p>
         </div>
-        <a href="#protocolos" class="mt-8 px-10 py-3 border border-white/20 text-white hover:border-cyan-500 hover:text-cyan-500 transition-all duration-500 text-[10px] tracking-[0.3em] uppercase">Explorar Ingeniería</a>
+        <a href="#servicios" class="mt-8 px-10 py-3 border border-white/20 text-white hover:border-cyan-500 hover:text-cyan-500 transition-all duration-500 text-[10px] tracking-[0.3em] uppercase">Explorar Servicios</a>
     </header>
 
-    <section id="protocolos" class="py-32 px-6 bg-[#141415]">
+    <section class="py-32 px-6 bg-[#141415]">
         <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
             <div class="text-center">
-                <span class="text-cyan-500 text-4xl font-bold mb-4 block">320°F</span>
-                <h5 class="text-white font-bold mb-2 uppercase text-xs tracking-widest">Termodesinfección</h5>
-                <p class="text-xs text-gray-500 leading-relaxed">Vapor seco saturado para eliminación del 99.9% de patógenos sin humedad residual.</p>
+                <span class="text-cyan-500 text-4xl font-bold mb-4 block tracking-tighter">320°F</span>
+                <h5 class="text-white font-bold mb-2 uppercase text-[10px] tracking-widest">Termodesinfección</h5>
+                <p class="text-xs text-gray-500 leading-relaxed">Vapor seco saturado para eliminación total de patógenos.</p>
             </div>
             <div class="text-center">
-                <span class="text-cyan-500 text-4xl font-bold mb-4 block">O3</span>
-                <h5 class="text-white font-bold mb-2 uppercase text-xs tracking-widest">Neutralización</h5>
-                <p class="text-xs text-gray-500 leading-relaxed">Saturación de ozono para purificación molecular del aire y conductos.</p>
+                <span class="text-cyan-500 text-4xl font-bold mb-4 block tracking-tighter">O3</span>
+                <h5 class="text-white font-bold mb-2 uppercase text-[10px] tracking-widest">Neutralización</h5>
+                <p class="text-xs text-gray-500 leading-relaxed">Purificación molecular del aire y conductos mediante ozono.</p>
             </div>
             <div class="text-center">
-                <span class="text-cyan-500 text-4xl font-bold mb-4 block">UV+</span>
-                <h5 class="text-white font-bold mb-2 uppercase text-xs tracking-widest">Protección UV</h5>
-                <p class="text-xs text-gray-500 leading-relaxed">Bloqueo de radiación para prevenir la degradación de polímeros interiores.</p>
+                <span class="text-cyan-500 text-4xl font-bold mb-4 block tracking-tighter">UV+</span>
+                <h5 class="text-white font-bold mb-2 uppercase text-[10px] tracking-widest">Protección UV</h5>
+                <p class="text-xs text-gray-500 leading-relaxed">Bloqueo de radiación para la conservación de polímeros.</p>
             </div>
         </div>
     </section>
 
-    <section class="py-32 px-6">
+    <section id="servicios" class="py-32 px-6">
         <div class="max-w-6xl mx-auto text-center">
-            <h4 class="text-white text-xs tracking-[0.4em] uppercase mb-16 opacity-50">Niveles de Restauración</h4>
-            <div class="grid md:grid-cols-3 gap-8">
+            <h4 class="text-white text-[10px] tracking-[0.5em] uppercase mb-16 opacity-40">Niveles de Restauración</h4>
+            <div class="grid md:grid-cols-3 gap-10">
                 
-                <div class="plan-card relative overflow-hidden glass p-10 rounded-2xl flex flex-col justify-between min-h-[400px]">
-                    <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?q=80&w=500" class="hover-image" alt="Limpieza básica">
+                <div class="plan-card relative overflow-hidden glass p-10 rounded-2xl flex flex-col justify-between min-h-[450px]">
+                    <img src="https://www.wikihow.com/images_en/thumb/3/36/Vacuum-a-Car-Step-6.jpg/550px-nowatermark-Vacuum-a-Car-Step-6.jpg" class="hover-image">
                     <div class="card-content">
                         <h5 class="text-[10px] tracking-widest text-gray-500 uppercase mb-4">Focus</h5>
                         <div class="text-4xl text-white font-light">$80</div>
@@ -72,25 +73,26 @@
                             <li>• Acondicionado Express</li>
                         </ul>
                     </div>
+                    <a href="https://wa.me/16513562815?text=Deseo%20agendar%20el%20Plan%20Focus" class="card-content mt-8 py-3 border border-white/20 text-white text-[10px] font-bold uppercase tracking-widest hover:bg-white hover:text-black transition">Agendar Focus</a>
                 </div>
 
-                <div class="plan-card relative overflow-hidden glass p-10 rounded-2xl border-2 border-cyan-500 transform md:scale-110 z-20 flex flex-col justify-between min-h-[400px]">
-                    <img src="https://images.unsplash.com/photo-1552930294-6b595f4c2974?q=80&w=500" class="hover-image" alt="Proceso de extracción">
+                <div class="plan-card relative overflow-hidden glass p-10 rounded-2xl border-2 border-cyan-500 transform md:scale-110 z-20 flex flex-col justify-between min-h-[450px] shadow-2xl shadow-cyan-500/10">
+                    <img src="https://images.unsplash.com/photo-1552930294-6b595f4c2974?q=80&w=500" class="hover-image">
                     <div class="card-content">
-                        <span class="bg-cyan-500 text-black text-[9px] font-bold px-3 py-1 rounded-full uppercase">Más Solicitado</span>
+                        <span class="bg-cyan-500 text-black text-[9px] font-bold px-3 py-1 rounded-full uppercase">Recomendado</span>
                         <h5 class="text-[11px] tracking-widest text-cyan-400 uppercase mt-6 mb-4 font-bold">Master Clean</h5>
                         <div class="text-6xl text-white font-bold">$160</div>
                         <ul class="text-left text-xs space-y-4 mt-8 text-gray-200">
                             <li>✅ Inyección / Extracción Profunda</li>
                             <li>✅ Vapor Térmico en Conductos</li>
-                            <li class="font-bold text-cyan-400">✅ Certificado de Bioseguridad</li>
+                            <li class="font-bold text-cyan-400 italic">✅ Reporte Digital de Bioseguridad</li>
                         </ul>
                     </div>
-                    <a href="https://wa.me/16513562815" class="card-content mt-8 py-3 bg-cyan-500 text-black text-[10px] font-bold uppercase tracking-widest">Agendar Ahora</a>
+                    <a href="https://wa.me/16513562815?text=Deseo%20agendar%20el%20Plan%20Master%20Clean" class="card-content mt-8 py-4 bg-cyan-500 text-black text-[10px] font-extrabold uppercase tracking-[0.2em] hover:bg-cyan-400 transition">Agendar Master Clean</a>
                 </div>
 
-                <div class="plan-card relative overflow-hidden glass p-10 rounded-2xl flex flex-col justify-between min-h-[400px]">
-                    <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d59085?q=80&w=500" class="hover-image" alt="Sellado cerámico">
+                <div class="plan-card relative overflow-hidden glass p-10 rounded-2xl flex flex-col justify-between min-h-[450px]">
+                    <img src="https://cdn.shopify.com/s/files/1/0273/2336/7447/files/341331167_1230335884522234_6106202965001528585_n_1024x1024.webp?v=1696383743" class="hover-image">
                     <div class="card-content">
                         <h5 class="text-[10px] tracking-widest text-gray-500 uppercase mb-4">Ultra Armor</h5>
                         <div class="text-4xl text-white font-light">$240</div>
@@ -100,30 +102,28 @@
                             <li>• Sellado Cerámico Interior</li>
                         </ul>
                     </div>
+                    <a href="https://wa.me/16513562815?text=Deseo%20agendar%20el%20Plan%20Ultra%20Armor" class="card-content mt-8 py-3 border border-white/20 text-white text-[10px] font-bold uppercase tracking-widest hover:bg-white hover:text-black transition">Agendar Ultra Armor</a>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="py-32 px-6 bg-[#141415]">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
+        <div class="max-w-6xl mx-auto flex flex-col md:row items-center gap-16 md:flex-row">
             <div class="md:w-1/2">
-                <div class="relative group">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
-                    <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=80&w=800" class="relative rounded-2xl border border-white/10" alt="Suelos de lujo">
-                </div>
+                <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=80&w=800" class="rounded-2xl border border-white/10 shadow-2xl">
             </div>
             <div class="md:w-1/2">
                 <h4 class="text-cyan-500 text-[10px] tracking-[0.4em] uppercase mb-4">Proyectos Especiales</h4>
-                <h2 class="text-4xl text-white font-light mb-6">Reemplazo de Alfombras & Suelos</h2>
-                <p class="text-sm text-gray-500 mb-8 leading-relaxed italic">"Personalización extrema con materiales pre-formados o tapicería de autor. Higiene absoluta y estética de exhibición."</p>
+                <h2 class="text-4xl text-white font-light mb-6">Restauración de Suelos</h2>
+                <p class="text-sm text-gray-500 mb-10 leading-relaxed">Reemplazo y personalización de alfombras con materiales de alta resistencia e higiene absoluta.</p>
                 <div class="grid grid-cols-2 gap-4">
-                    <div class="glass p-6 rounded-xl text-center">
-                        <p class="text-[9px] text-gray-500 uppercase mb-2 tracking-widest">Pre-formada</p>
+                    <div class="glass p-6 rounded-xl">
+                        <p class="text-[9px] text-gray-500 uppercase mb-2">Pre-formada</p>
                         <p class="text-2xl text-white font-bold">$160</p>
                     </div>
-                    <div class="glass p-6 rounded-xl text-center border-cyan-500/30">
-                        <p class="text-[9px] text-cyan-500 uppercase mb-2 tracking-widest font-bold">A Medida</p>
+                    <div class="glass p-6 rounded-xl border-cyan-500/30">
+                        <p class="text-[9px] text-cyan-500 uppercase mb-2 font-bold">A Medida</p>
                         <p class="text-2xl text-white font-bold">$240</p>
                     </div>
                 </div>
@@ -132,40 +132,42 @@
     </section>
 
     <section class="py-32 px-6">
-        <div class="max-w-4xl mx-auto text-center">
-            <h4 class="text-white text-xs tracking-[0.4em] uppercase mb-12 opacity-50">Resultados de Ingeniería</h4>
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h4 class="text-white text-[10px] tracking-[0.5em] uppercase opacity-40">Resultados de Ingeniería</h4>
+            </div>
             <div class="comparison-slider shadow-2xl">
-                <img src="https://images.unsplash.com/photo-1599256621730-535171e28e50?q=80&w=800" class="image-before" alt="Antes">
-                <img src="https://images.unsplash.com/photo-1507133366044-c99f27df5540?q=80&w=800" class="image-after" id="after-img" alt="Después">
+                <img src="antes.png" class="image-before">
+                <img src="despues.png" class="image-after" id="after-img">
                 <div class="slider-line" id="line"></div>
                 <input type="range" min="0" max="100" value="50" class="slider-input" id="slider">
             </div>
-            <p class="mt-6 text-[10px] uppercase tracking-widest text-gray-600">Deslice para comparar el proceso de restauración</p>
+            <p class="mt-8 text-center text-[10px] uppercase tracking-widest text-gray-600">Deslice para comparar el proceso de restauración técnica</p>
         </div>
     </section>
 
     <section class="py-32 px-6 bg-[#1A1A1B] border-t border-white/5">
         <div class="max-w-4xl mx-auto text-center">
-            <h4 class="text-white text-xs tracking-[0.4em] uppercase mb-16">Programas de Gestión Anual</h4>
+            <h4 class="text-white text-[10px] tracking-[0.4em] uppercase mb-16">Gestión de Mantenimiento</h4>
             <div class="grid md:grid-cols-3 gap-6">
                 <div class="p-8 border border-white/5 rounded-2xl">
-                    <p class="text-[10px] text-gray-600 uppercase mb-4 tracking-widest">Silver</p>
-                    <div class="text-2xl text-white">$95<span class="text-[10px] text-gray-600">/mes</span></div>
+                    <p class="text-[9px] text-gray-600 uppercase mb-4">Silver</p>
+                    <div class="text-2xl text-white font-light">$95<span class="text-[10px] text-gray-700">/mes</span></div>
                 </div>
                 <div class="p-8 border border-cyan-500/20 bg-cyan-500/5 rounded-2xl">
-                    <p class="text-[10px] text-cyan-500 uppercase mb-4 tracking-widest font-bold">Gold</p>
-                    <div class="text-2xl text-white">$165<span class="text-[10px] text-gray-600">/mes</span></div>
+                    <p class="text-[9px] text-cyan-500 uppercase mb-4 font-bold">Gold</p>
+                    <div class="text-2xl text-white font-bold">$165<span class="text-[10px] text-gray-700">/mes</span></div>
                 </div>
                 <div class="p-8 border border-white/5 rounded-2xl">
-                    <p class="text-[10px] text-gray-600 uppercase mb-4 tracking-widest">Platinum</p>
-                    <div class="text-2xl text-white">$310<span class="text-[10px] text-gray-600">/mes</span></div>
+                    <p class="text-[9px] text-gray-600 uppercase mb-4">Platinum</p>
+                    <div class="text-2xl text-white font-light">$310<span class="text-[10px] text-gray-700">/mes</span></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-10 text-center border-t border-white/5">
-        <p class="text-[10px] uppercase tracking-widest text-gray-700">Shakopee, MN | Ultra Detailing & Biosecurity | Developer: Matt</p>
+    <footer class="py-12 text-center border-t border-white/5">
+        <p class="text-[9px] uppercase tracking-[0.3em] text-gray-700">Shakopee, MN | Ultra Detailing & Biosecurity</p>
     </footer>
 
     <script>
